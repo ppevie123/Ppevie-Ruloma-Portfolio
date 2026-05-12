@@ -1141,6 +1141,44 @@ position:relative;
     }
     .proof-box b{ color:rgba(255,255,255,0.95); }
 
+    /* Proof screenshot gallery */
+    .proof-gallery{
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .proof-gallery img{
+      height:160px;
+      width:auto;
+      max-width:100%;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.12);
+      object-fit:cover;
+      cursor:pointer;
+      transition:0.25s ease;
+      box-shadow:0 8px 20px rgba(0,0,0,0.30);
+    }
+    .proof-gallery img:hover{
+      transform:translateY(-3px) scale(1.02);
+      border-color:rgba(0,212,255,0.40);
+      box-shadow:0 0 22px rgba(0,212,255,0.18);
+    }
+    .proof-gallery--mobile img{
+      height:220px;
+      width:auto;
+      border-radius:16px;
+    }
+    .proof-label{
+      font-size:0.95rem;
+      color:var(--neon-blue);
+      font-weight:900;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      margin-top:14px;
+      margin-bottom:6px;
+    }
+
     .project-actions{
       margin-top:12px;
       display:flex;
@@ -2011,6 +2049,10 @@ position:relative;
             <li>Worked <span class="metric-highlight">~2 hrs/day</span>, maintaining consistent daily turnaround at high volume.</li>
             <li>Ensured visual consistency across all thumbnails to strengthen channel branding.</li>
           </ul>
+          <div class="proof-label"><i class="fa-solid fa-camera"></i> Channel Proof</div>
+          <div class="proof-gallery">
+            <img src="proof-tutorialnest-channel.png" alt="TutorialNest YouTube channel screenshot showing 3.22K subscribers and 2.5K videos" loading="lazy" decoding="async" />
+          </div>
         </div>
 
         <div class="glass-panel glow-section">
@@ -2031,6 +2073,13 @@ position:relative;
             <li>Used <span class="metric-highlight">AI video tools + CapCut</span> for generation, editing, captions, and Reels-ready exports.</li>
             <li>Work samples available in <a href="https://drive.google.com/drive/folders/1q5r3tTqaqfIS6--6m8_5IWy-l25ngEg5?usp=drive_link" target="_blank" rel="noopener" style="color:var(--neon-blue);border-bottom:1px dashed rgba(0,212,255,0.35);">Google Drive portfolio</a>.</li>
           </ul>
+          <div class="proof-label"><i class="fa-brands fa-instagram"></i> Account Proof</div>
+          <div class="proof-gallery proof-gallery--mobile">
+            <img src="proof-instagram-petedogsicecap.png" alt="petedogsicecap Instagram account — Pete's Dog Advice, 70 posts, 71 followers" loading="lazy" decoding="async" />
+            <img src="proof-instagram-andredogsglacier.png" alt="andredogsglacier Instagram account — Andre's Dog Advice, 69 posts, 104 followers" loading="lazy" decoding="async" />
+            <img src="proof-instagram-junecatsicecap.png" alt="junecatsicecap Instagram account — June's Cat Advice, 70 posts, 40 followers" loading="lazy" decoding="async" />
+            <img src="proof-instagram-tanishacatsglacier.png" alt="tanishacatsglacier Instagram account — Tanisha's Cat Advice, 70 posts, 1 follower" loading="lazy" decoding="async" />
+          </div>
         </div>
       </section>
 
